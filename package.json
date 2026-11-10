@@ -1,0 +1,11 @@
+{
+  "name": "same-spot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Same Spot: can you tell yet whether a slow-acting product is working? A private, on-device record for Be Bodywise customers.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "python3 -m http.server 8080"
+  }
+}

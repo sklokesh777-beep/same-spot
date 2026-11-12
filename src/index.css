@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colours are RGB channels so Tailwind can add opacity. */
+:root {
+  --bg: 246 248 251;
+  --card: 255 255 255;
+  --raised: 255 255 255;
+  --line: 227 232 239;
+  --ink: 27 35 51;
+  --ink2: 91 101 118;
+  --primary: 0 89 149;
+  --primary-press: 0 74 124;
+  --onprimary: 255 255 255;
+  --navy: 20 52 97;
+  --accent: 253 220 105;
+  --onaccent: 43 35 0;
+
+  --blue-50: 230 245 255;
+  --blue-ink: 0 89 149;
+  --lav-50: 243 238 255;
+  --lav-ink: 91 63 168;
+  --mint-50: 231 243 241;
+  --mint-ink: 15 94 82;
+  --sand-50: 255 248 225;
+  --sand-ink: 122 90 0;
+  --rose-50: 255 240 240;
+  --rose-ink: 161 42 42;
+  --coral-50: 255 238 230;
+  --coral-ink: 154 59 18;
+  --grey-50: 240 243 247;
+  --grey-ink: 62 74 92;
+
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  color-scheme: light;
+}
+
+.dark {
+  --bg: 11 18 32;
+  --card: 19 28 46;
+  --raised: 26 37 64;
+  --line: 38 50 74;
+  --ink: 232 238 247;
+  --ink2: 167 179 198;
+  --primary: 90 169 230;
+  --primary-press: 123 187 238;
+  --onprimary: 11 18 32;
+  --navy: 220 232 248;
+  --accent: 253 220 105;
+  --onaccent: 43 35 0;
+
+  --blue-50: 16 39 61;
+  --blue-ink: 140 200 245;
+  --lav-50: 33 27 59;
+  --lav-ink: 196 178 255;
+  --mint-50: 15 42 42;
+  --mint-ink: 127 211 194;
+  --sand-50: 43 36 20;
+  --sand-ink: 242 207 107;
+  --rose-50: 46 23 25;
+  --rose-ink: 255 168 168;
+  --coral-50: 46 28 20;
+  --coral-ink: 255 179 143;
+  --grey-50: 26 35 53;
+  --grey-ink: 195 204 218;
+  color-scheme: dark;
+}
+
+html[data-text='large'] {
+  font-size: 112.5%;
+}
+html[data-text='xl'] {
+  font-size: 125%;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-bg text-ink font-sans antialiased;
+    font-size: 1rem;
+    line-height: 1.5;
+    min-height: 100dvh;
+    text-rendering: optimizeLegibility;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply text-navy;
+  }
+  :focus-visible {
+    outline: 3px solid rgb(var(--primary) / 0.55);
+    outline-offset: 2px;
+  }
+  button {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .title {
+    @apply font-serif text-navy;
+    font-size: 2.125rem;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+  .title-lg {
+    @apply font-serif text-navy;
+    font-size: 2.6rem;
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+  }
+  .kicker {
+    @apply text-[0.78rem] font-bold uppercase tracking-[0.08em] text-primary;
+  }
+  .muted {
+    @apply text-ink2;
+  }
+  .card {
+    @apply rounded-card border border-line bg-card shadow-soft;
+  }
+  .tap {
+    @apply transition-transform duration-150 ease-out active:scale-[0.98];
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.blurred {
+  filter: blur(14px);
+  transform: scale(1.06);
+}
+
+.pb-tabbar {
+  padding-bottom: calc(88px + var(--safe-b));
+}
+@media (min-width: 1024px) {
+  .pb-tabbar {
+    padding-bottom: 48px;
+  }
+}
+
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translateX(-2px);
+  }
+  20%,
+  80% {
+    transform: translateX(4px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translateX(-8px);
+  }
+  40%,
+  60% {
+    transform: translateX(8px);
+  }
+}
+.shake {
+  animation: shake 0.45s both;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translate3d(0, -10vh, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--dx), 105vh, 0) rotate(var(--rot));
+    opacity: 0.9;
+  }
+}
+.confetti-piece {
+  position: fixed;
+  top: 0;
+  width: 9px;
+  height: 14px;
+  border-radius: 3px;
+  pointer-events: none;
+  z-index: 80;
+  animation: confetti-fall var(--dur) cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* The printable summary for a dermatologist. */
+@media print {
+  @page {
+    margin: 14mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-sheet {
+    box-shadow: none !important;
+    border: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  .print-sheet * {
+    color: #111 !important;
+  }
+}

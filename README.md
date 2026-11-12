@@ -2,118 +2,158 @@
 
 **Can you tell yet whether it's working?**
 
-Same Spot is a private browser app for Be Bodywise customers using slow-acting hair and skin products. It counts the weeks you really used the product, notes what else changed, and only gives a verdict when your before and after photos can honestly be compared.
+Same Spot is a private web app for Be Bodywise customers who use slow-acting hair and skin products. It counts the weeks you really used a product, notes what else changed, and gives a result only when your first and latest photos can be compared honestly, without dates.
 
-**Live app:** https://sklokesh777-beep.github.io/same-spot/
-**Straight to the 60-second example:** https://sklokesh777-beep.github.io/same-spot/?demo=1
+**Open the app:** https://sklokesh777-beep.github.io/same-spot/
+
+It works on phones and laptops, installs to the home screen, and works offline after the first visit. Everything stays on your device.
 
 Built for Part 2 of the Mosaic Wellness Fellowship Builder Challenge.
 
+## Try it in 2 minutes
+
+You need any two images on your device, such as two photos from your gallery.
+
+1. Tap **Get started**, then **Skip**. Tick **I'm 18 or older** and tap **Continue**. On an iPhone in Safari, a Home Screen tip follows: tap **Continue in Safari**.
+2. Choose **Underarm darkening**, then **6% AHA BHA Underarm Roll On**.
+3. Under **When did you start using it?**, choose **Earlier**, then **3 months ago**, then **Next**.
+4. Choose **Most days**. On the pack screen, tap **Next**.
+5. **Your timeline** shows both looks as **Ready now**, because 13 weeks of real use are already counted. Tap **Take my first photos**.
+6. Under **Left underarm, arm raised**, tap **Add an older photo**, pick an image and tap **Use photo**. Choose **Around my start date** and tap **Use this date**. Then tap **Gallery** (or **Take photo**) for today's photo and tap **Use photo**. If the light differs a lot from the older photo, the button says **Use anyway**.
+7. Tap **Save 2 photos and finish**, then **Start your full look**.
+8. Tap **Start**. Tap **A looks better**, **B looks better** or **About the same**. You see the dates only after you pick. Tap **See your result**, then **Why this result?**.
+
+To see what happens later, open **Settings > Advanced > Change today's date** and tap **+1 week** twice. Home now shows **Check-in due**. A check-in has 4 questions. If you report a warning sign, such as burning that lasts, the **Please check this first** screen comes before everything else and stays on Home until you tap **It has settled**.
+
 ## The problem
 
-In customer interviews (Part 1), four of five customers could not tell, after weeks or months, whether a product was doing the slower job they bought it for. Three causes kept coming up:
+- Be Bodywise customers use slow-acting products for hair fall, underarm darkening and neck or elbow darkening. Visible results take 8 to 24 weeks.
+- In my interviews, 4 of 5 customers couldn't tell, after weeks or months, whether their product was working. The one who could see her result bought again. The others stopped, or kept paying without knowing.
+- Three causes came up again and again:
+  1. **No record of the start.** Memory of how things looked fades.
+  2. **Other things changed at the same time,** such as a new deodorant, a hair oil, an illness or stress, so nobody knows what helped.
+  3. **Waiting times assume daily use.** Real use is often a few days a week, so nobody knows when to expect a change.
 
-1. **No record of the start.** Memory of how things looked fades and shifts.
-2. **Other things changed too.** A new deodorant, hair oil, illness or stress can explain a difference.
-3. **Waiting times assume daily use.** Labels and studies assume use as directed. Real use is often a few nights a week, so nobody knew when to expect a change.
+## How it works
 
-## What Same Spot does
+Same Spot answers each cause with one idea.
 
-| Cause | Same Spot's answer |
-| --- | --- |
-| No record of the start | Two matched first photos, kept only on the phone. Later photos are checked for light against the first ones. |
-| Other things changed | Every check-in asks "Anything new since last time?" A major trigger (for hair) or 3 or more changes gives "Can't tell: too much changed" instead of credit to the product. |
-| Waiting assumes daily use | A **real-use clock**: most days counts as a full week, about half the days as half, a few times as a quarter. Look dates move with honest answers, and the arithmetic is shown. |
+1. **Real-use clock.** Every day since you started counts by how often you used the product: most days = 1, about half the days = ½, once in a while = ¼, not at all or paused = 0. Weeks of real use are the total divided by 7 and can never be more than the calendar weeks. Your look dates move with your honest answers.
+2. **Same spot, same light.** Guided photos for each body area, a faint copy of your first photo to line up with, a grid, a 3-second timer and a live light check. A photo whose light differs a lot from your first one (below 0.75× or above 1.33× its average brightness) is marked, and the result says it is less certain.
+3. **Compare without dates.** At the early look and the full look, your first and latest photos appear in random order as A and B. You pick, or hand the phone to someone you trust. Then the dates are revealed and fixed rules give a plain result with the reason.
 
-The main loop:
+| Concern | Early look | Full look | Photo views |
+| --- | --- | --- | --- |
+| Hair fall or thinning | 12 weeks | 24 weeks | Parting, front hairline |
+| Underarm darkening | 8 weeks | 12 weeks | Left and right underarm |
+| Neck or elbow darkening | 8 weeks | 12 weeks | Neck, outer elbow |
+| Something else | 8 weeks | 12 weeks (general) | Close-up, wider view |
 
-1. **Set up (about 2 minutes):** pick the concern (hair fall or thinning, underarm darkening, neck or elbow darkening), the product, the start date, how often you really use it, and how long a pack lasts. See what to expect and by when, with the pack's directions and the evidence level.
-2. **First photos (optional):** two views, same spot and light. A dashed guide shows the framing.
-3. **Check-ins (about 30 seconds):** week 2, then every 4 weeks. Four questions: how often you used it, anything new, any warning signs, and one quick sign (hair fall, odour or smoothness).
-4. **Early and full look:** compare first and latest photos **without dates**, in random order, labelled only A and B. "Looks better" needs the newer photo picked in every pair. You can hand the phone to someone else to choose.
-5. **Verdict:** a plain answer with a number, a date and a reason, including honest "too early" and "can't tell" results.
+The weeks are weeks of real use. Check-ins come 2 weeks after you start, then every 4 weeks (or every 2), and take about 30 seconds.
 
-## The verdict rules
+### The result rules
 
-Rules run in a fixed order and the first match decides, so two rules can never contradict each other:
+The rules run in this order, and the first match decides, so two results can never contradict each other.
 
-1. **Warning sign open:** "Please check this first". Safety comes before any "keep going".
-2. **Twice the full window passed without a full trial:** "Can't tell: use was too uneven".
-3. **Before the early look:** "Too early to judge".
-4. **Too much else changed:** "Can't tell: too much changed".
-5. **Photos must be able to show it:** no first photo (your sense only), first photos too recent, or light too different.
-6. **The comparison without dates:** better so far, no clear change, looks worse, or better but other things changed too.
+1. A warning sign is open: **Please check this first.**
+2. The calendar weeks are at least twice the full window, but real use is below it: **Can't tell: use was too uneven.**
+3. Real use is below the early window: **Too early to judge.**
+4. Too much changed, such as an illness with fever during a hair tracker, or 3 or more different changes for any concern: **Can't tell: too much changed.**
+5. The photos must be able to show a change. No first photos: **Your sense only.** First photos younger than the early window: **Too early for your photos.** No photo from the last 14 days: **Can't compare these photos yet.**
+6. The comparison without dates: **Looks better so far**, **Looks better while using it**, a version that adds "but other things changed too", **No clear change yet**, **No clear change after a full trial**, or **Looks worse to you.**
 
-Open the example on a laptop to see the **Under the hood** panel, which traces each rule for the case on screen.
+Each result has a **Why this result?** checklist and clear next steps. After a full trial with no clear change, Keep going, Pause and decide later, Talk to a dermatologist and Stop using it are equal choices.
+
+Results are worked out again from the saved facts every time, so editing a check-in updates them. Only your A or B picks are saved as answers.
 
 ## Features
 
-- **Five example cases** on made-up data, run through the real engine: too early, no clear change yet, other things changed, a full trial with no clear change, and a warning sign. The first four have a playable photo check on drawn illustrations (no real or stock photos).
-- **Real-use clock** with the arithmetic shown, and a what-if table showing how use frequency moves the dates.
-- **Light check** on new photos against the first ones, with retake or keep options. A **live camera with a faint copy of the first photo** to line up with, where the browser allows it. The phone camera through a file input always works.
-- **Ask someone else to choose:** hand the phone over for the comparison without dates.
-- **Pack running out:** four equal choices (keep going, pause, talk to a dermatologist, stop). No prices and no buy links.
-- **Summary for a dermatologist:** a one-page record to show or print, with optional first and latest photos. No name or contact details.
-- **Calendar reminders:** Google Calendar links and an .ics file. Events just say "Same Spot check-in".
-- **Backup:** export and import one JSON file with records and photos.
-- **App lock:** an optional 4-digit code for shared phones (a deterrent, not encryption).
-- **Works offline** and can be added to the home screen (PWA). On iPhone, Same Spot explains why adding it to the Home Screen protects the record from Safari's clean-up.
+- **First launch:** welcome, three swipeable intro cards, privacy and an 18+ check, a Home Screen tip on iPhone, and restore from a backup.
+- **New tracker:** 7 short steps with a progress bar. Follow up to 3 products at once.
+- **Home:** the one thing to do next for each tracker, such as a warning sign, a look that's ready, a check-in that's due or a pack running out. **Quick add** logs a change, a warning sign, new photos, a new pack or a pause, with Undo.
+- **Check-in:** how often you used it, anything new, warning signs and a quick sign, plus optional matched photos.
+- **The look:** A and B pairs, the reveal, the result and what's next.
+- **Safety screen:** what to do about the warning sign, when to see a dermatologist, and a summary to print for the visit.
+- **Progress:** a ring for weeks of real use, the timeline, "How we count", charts for use and your quick sign, changes logged, and a history you can edit.
+- **Photos:** every photo by view, with side-by-side and slider compare.
+- **Camera:** the live camera with the faint first photo, grid, light check, timer and front or back camera. If the camera is blocked or the app is open inside Instagram or WhatsApp, a clear fallback lets you use the gallery or copy the link.
+- **Pack running out:** a gentle reminder, where stopping is an equal choice.
+- **Summary for a dermatologist:** a one-page record you can print or save as a PDF.
+- **Guide:** your products, what to expect, photo tips, when to see a doctor, how Same Spot decides, evidence and sources, and questions.
+- **Settings:** each tracker (name, check-in interval, full look window, pause, restart, close, delete); appearance (theme, text size, reduce motion); calendar reminders (a Google Calendar link or an .ics file, with discreet titles) and a monthly backup reminder; a 4-digit app lock and blurred photo previews; storage status, backup, and delete everything; and **Advanced** to change today's date.
+- **App quality:** installable, offline after the first visit, and a "new version is ready" bar. Light and dark themes, three text sizes, keyboard and screen reader support, and layouts from 360 to 1440 px wide.
 
 ## Privacy
 
-- No server, no account, no analytics, no third-party requests. Everything is stored in IndexedDB in the browser on the phone.
-- Photos are resized on the phone, saved as JPEG inside the app, and never written to the gallery.
-- The app contains no customer names, phone numbers or other personal information. The examples use made-up data.
-- "Delete everything" removes every record and photo.
-- Not a medical device. Warning signs always point to the pack's directions or a dermatologist.
-
-## Design
-
-The look follows the Be Bodywise site: its primary blue `#005995`, navy `#143461`, yellow `#FDDC69` accent and pastel panels, with Inter for text (the site's fallback font) and Instrument Serif for headings. Both fonts are self-hosted under the SIL Open Font License (see `fonts/`). Each verdict family has its own colour, icon and title, so meaning never depends on colour alone. The main screens pass an axe-core scan (WCAG 2.1 A and AA rules) with no violations.
-
-Wording rules: numbers and dates instead of impressions, "no clear change in your photos" rather than "not working", and no skin-colour words.
+- No server, accounts, analytics, ads or tracking. The app loads only its own files. A Content Security Policy blocks requests to any other site, and the fonts and icons are bundled.
+- Everything is saved in this browser's storage (IndexedDB). The app asks the browser to keep it, and reminds you to back up.
+- Photos are resized and re-encoded on the device (at most 1600 px, JPEG), which removes location and other hidden data. They are never saved to your gallery and never uploaded.
+- No AI looks at your photos. You, or someone you trust, does the comparing.
+- A backup is one .json file that you keep. You can protect it with a password (AES-GCM with a PBKDF2 key, 200,000 iterations).
+- The app lock code is stored only as a salted PBKDF2 hash.
+- **Delete everything** removes every tracker and photo from the device.
+- Same Spot is not a medical device. It never diagnoses and never says a product works. It shows what your own photos and answers show. Product directions stay with your pack.
+- No buy buttons, prices, offers, streaks or badges.
 
 ## Tech
 
-- Plain HTML, CSS and JavaScript modules. No framework, no build step, no dependencies.
-- `js/engine.js`: the real-use clock, schedule and verdict rules (pure functions).
-- `js/copy.js`: the exact wording for each verdict.
-- `js/config.js`: concerns, products, directions, look windows and sources.
-- `js/state.js` and `js/store.js`: IndexedDB storage with 5 stores (meta, records, check-ins, photo details, image data).
-- `js/screens/`: one module per screen, behind a small hash router in `js/app.js`.
-- `sw.js`: a network-first service worker for offline use. It caches only the app's own files.
+- React 18, TypeScript and Vite 6
+- Tailwind CSS 3, with CSS variables for the light and dark themes
+- Radix UI for dialogs, sheets, switches and expandable rows
+- Dexie 4 and dexie-react-hooks for IndexedDB
+- Framer Motion, lucide-react, exifr (photo capture dates)
+- vite-plugin-pwa (Workbox) for offline use and install
+- Vitest for the engine tests
+- React Router with HashRouter and Vite's `base: "./"`, so it runs on any static host, including GitHub Pages. Each screen loads as its own code chunk.
 
-Run it locally (any static server works):
-
-```sh
-python3 -m http.server 8080
-# then open http://localhost:8080
+```
+src/
+  engine/      pure logic: dates, the real-use clock, the result rules, and their tests
+  data/        IndexedDB, photo processing, backup, encryption, calendar, history
+  features/    one folder per screen or flow
+  components/  the UI kit: buttons, cards, sheets, toasts, illustrations
+  content/     concerns, products, wording and sources
 ```
 
-Run the tests (Node 20 or later):
+## Run and test
 
-```sh
-npm test
+You need Node.js 18 or newer (built with Node 22).
+
+```bash
+npm install
+npm run dev       # start a local server
+npm test          # run the engine tests once
+npm run build     # type check, then build into dist/
+npm run preview   # serve the build
 ```
 
-The 30 engine tests cover the blueprint's 8 worked examples, every verdict rule and their order, the check-in schedule, pauses, look-date projections, and checks that no verdict wording uses skin-colour words or calls a product "not working".
+The 14 engine tests cover the cases from the brief: too early with half-the-days use, a new deodorant during an underarm trial, a warning sign that beats every other rule, an illness with fever during a hair trial, your sense only without photos, use too uneven over 49 weeks, first photos that are too new, a pause that adds no weeks, and dates that stay the same in any time zone. They also cover an older photo that makes the full look ready on day one, photos older than 2 weeks, "looks worse to you", a light-differs photo, and three changes for any concern.
 
-## Evidence
+The app was also checked in a browser at phone and laptop sizes: every flow, the Back button, dark theme, text size, app lock, backup and restore, delete everything, offline use, and accessibility (axe-core, WCAG 2.1 AA, on every screen in both themes).
 
-Look windows come from published studies and product labels, and the app says how strong the evidence is for each concern:
+## Why it matters for Be Bodywise
 
-- **Hair fall or thinning:** early look at 12 weeks, full look at 24 weeks of regular use. Evidence: low to medium.
-- **Underarm darkening:** early look at 8 weeks, full look at 12. Evidence: low.
-- **Neck or elbow darkening:** early look at 8 weeks, full look at 12. Evidence: low for the neck, very low for elbows.
+- **Trust.** Honest "too early" and "can't tell" results show that the brand isn't overselling.
+- **Repeat purchases.** In the interviews, the customer who could see her result bought again.
+- **Fewer "it didn't work" complaints.** Dates based on real use set the right expectation before someone gives up after 3 weeks.
 
-Every source is linked in the app under "Why these dates" and on the How it works page. Product directions are paraphrased from the Be Bodywise product pages, checked in November 2026, and the app says to follow the pack if it differs.
+## What could come next
+
+- Pack size from order history, so pack reminders need no setup.
+- WhatsApp reminders, with consent.
+- Hindi.
+- A hand-off to a dermatologist consultation, with the summary attached.
 
 ## Limits
 
-- Tested in Chromium (desktop and mobile sizes) and in an iPhone emulation. It has not yet been tested with real phone cameras or on a real iPhone.
-- On iPhone, Safari can clear site data after 7 days without a visit unless Same Spot is opened from the Home Screen. The app explains this and offers a backup.
-- The app lock hides the record from casual access. It does not encrypt data.
+- Tested in Chromium at phone and laptop sizes, including a simulated camera. Not yet tested with a real phone camera or on an iPhone.
+- Lighthouse couldn't run in the build environment. Measured instead with the files served locally and the CPU slowed 4 times: First Contentful Paint 0.43 s, Largest Contentful Paint 1.03 s, Cumulative Layout Shift 0, and about 254 KB (gzipped) on the first load.
+- The counting weights (1, ½ and ¼) are an estimate, not a study result.
+- The look windows come from the studies listed in the Guide. For "Something else", they are general.
+- A browser can clear its storage, and Safari may do so after 7 days without a visit. Adding the app to the home screen and keeping a backup protect your record.
 
-## AI tools used
+## Credits
 
-Built with Kiro, an AI coding agent, working from the Part 1 research and the Same Spot blueprint.
+Built with Kiro, an AI coding agent, from my Part 1 research and written brief.
+
+Fonts: Inter and Instrument Serif, both under the SIL Open Font License 1.1. Icons: Lucide, under the ISC License.

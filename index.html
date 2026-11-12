@@ -1,43 +1,26 @@
 <!doctype html>
 <html lang="en-IN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Same Spot</title>
-  <meta name="description" content="Can you tell yet whether it's working? Same Spot counts the weeks you really used a slow-acting hair or skin product, notes what else changed, and only gives a verdict when your before and after can honestly be compared. Photos stay on your phone.">
-  <meta name="theme-color" content="#005995">
-  <meta name="color-scheme" content="light">
-  <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' blob: data:; media-src 'self' blob: mediastream:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Same Spot">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta property="og:title" content="Same Spot: can you tell yet?">
-  <meta property="og:description" content="A private, honest record for slow-changing hair and skin concerns. Made for Be Bodywise customers.">
-  <meta property="og:type" content="website">
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
-  <link rel="preload" href="./fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./css/app.css">
-  <link rel="modulepreload" href="./js/app.js">
-</head>
-<body>
-  <a class="skip-link" href="#screen">Skip to content</a>
-  <div class="app-backdrop" aria-hidden="true"></div>
-  <div class="app" id="app">
-    <main id="screen" class="screen" tabindex="-1">
-      <div class="boot" role="status">
-        <svg width="56" height="56" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="13" fill="#005995"/><path d="M12 19v-5.5A1.5 1.5 0 0 1 13.5 12H19M29 12h5.5a1.5 1.5 0 0 1 1.5 1.5V19M36 29v5.5a1.5 1.5 0 0 1-1.5 1.5H29M19 36h-5.5a1.5 1.5 0 0 1-1.5-1.5V29" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="24" r="4.6" fill="#FDDC69"/></svg>
-        <span>Same Spot</span>
-      </div>
-      <noscript>
-        <div class="noscript">Same Spot needs JavaScript to run. Everything it saves stays on this phone.</div>
-      </noscript>
-    </main>
-  </div>
-  <script type="module" src="./js/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Same Spot</title>
+    <meta name="description" content="Can you tell yet whether it's working? Same Spot counts the weeks you really used a slow-acting hair or skin product, notes what else changed, and compares your photos without dates. Everything stays on your device." />
+    <meta name="theme-color" content="#005995" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' blob: data:; media-src 'self' blob: mediastream:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self' data:; connect-src 'self' blob: data:; worker-src 'self'; manifest-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Same Spot" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta property="og:title" content="Same Spot: can you tell yet?" />
+    <meta property="og:description" content="An honest, private record for slow-acting hair and skin products. Made for Be Bodywise customers." />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Same Spot needs JavaScript to run. Everything it saves stays on your device.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

@@ -1,6 +1,0 @@
-node_modules/
-.DS_Store
-*.log
-# Research material and interview notes stay out of the repository.
-*.pdf
-_research/
